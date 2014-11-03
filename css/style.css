@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #E9F1DF;
+}
+
+#container {
+	margin: 5% auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: #4AD9D9;
+	width: 80%;
+	min-height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+#container h1 {
+	position: relative;
+	z-index: 1;
+	color: white;
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+#cvs {
+	overflow: hidden;
+	z-index: 0;
+	position: relative;
+	top: -100px;
+	border: 0;
+	padding: 0;
+	float: left;
+}

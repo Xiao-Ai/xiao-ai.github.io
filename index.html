@@ -4,9 +4,50 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Welcome | Aix</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="init()">
+	<div id="container">
 	<h1>Welcome to Aix</h1>
+	<canvas id="cvs" width="1000" height="400"></canvas>
+	</div>
+
+	<script type="text/javascript">
+	var c;
+	var ctx;
+
+	function init() {
+		c = document.getElementById("cvs");
+		ctx = c.getContext("2d");
+		draw();
+	}
+
+	function draw() {
+	var posX = 0;
+	var posY = 0;
+
+	var x = c.width / 500;
+	var y = c.height / 500;
+
+	setInterval(function() {
+		posX += x;
+		posY += y;
+
+		ctx.clearRect(0, 0, c.width, c.height);
+
+		ctx.fillStyle = "#F5A503";
+		ctx.beginPath();
+		ctx.arc(posX, posY, 50, 0, Math.PI * 2);
+		ctx.fill();
+
+		ctx.fillStyle = "#F2385A";
+		ctx.beginPath();
+		ctx.arc(posX+400, 200, 60, 0, Math.PI * 2);
+		ctx.fill();
+	}, 40);
+}
+
+	</script>
+	
 </body>
 </html>
