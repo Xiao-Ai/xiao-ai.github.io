@@ -1,9 +1,28 @@
+body {
+	font-family: "Open Sans";
+}
 ::-moz-selection {
 	background: #fec000; 
 	color: white;
 }
 
 ::selection {
-	background: #ffcc00; 
+	background: #f5ca0c; 
 	color:white;
+}
+
+@media (max-width: 480px) {
+	.big-title {
+		line-height: 1.5em !important;
+	}
+}
+
+.info .excerpt {
+	font-size: 1em !important;
+}
+
+.project-meta {
+	font-size: 12px;
+	text-align: center;
+	/*border: 1px solid black;*/
 }
