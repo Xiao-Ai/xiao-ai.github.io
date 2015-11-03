@@ -64,19 +64,11 @@ body {
 	border-bottom: 2px solid #f5ca0c;
 }
 
-/*.label {
-    display: inline;
-    padding: .2em .6em .3em;
-    font-size: 100%;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25em;
+.thumb {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-.label-warning {
-    background-color: #f0ad4e;
-}*/
+.tag {
+	font-size: 12px;
+}
