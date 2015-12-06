@@ -89,7 +89,6 @@ p#back-to-top a {
     color: #ffec90;
     display: block;
     width: 64px;
-
     -moz-transition: color 1s;
     -webkit-transition: color 1s;
     -o-transition: color 1s;
@@ -97,4 +96,18 @@ p#back-to-top a {
 
 p#back-to-top a:hover {
     color: #f5ca0c;
+}
+
+.asterisk {
+    font-size: 12px;
+    vertical-align: top;
+    color: black;
+}
+
+.shadow {
+    box-shadow: 2px 2px 8px 2px #aaaaaa;
+}
+
+.vertical {
+
 }
